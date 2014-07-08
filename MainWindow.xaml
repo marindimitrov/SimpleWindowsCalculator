@@ -1,0 +1,101 @@
+﻿<Window x:Class="SimpleWindowsCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Calculator" Height="323" Width="228" >
+
+    <Grid Margin="0,0,0,1" HorizontalAlignment="Right" Width="220" 
+          Background="{DynamicResource MainBack}">
+        <TextBox x:Name="inputField" Margin="18,50,12,205" 
+                 Style="{DynamicResource InputFieldStyle}" />
+        <TextBox x:Name="tempField" Margin="18,30,12,232" 
+                 Style="{DynamicResource TempFieldStyle}" />
+
+        <Button x:Name="mcButton" Content="MC" Click="mcButtonClicked" HorizontalAlignment="Left" Margin="18,85,0,0" Padding="5" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="mrButton" Content="MR" Click="mrButtonClicked" HorizontalAlignment="Left" Margin="57,85,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="msButton" Content="MS" Click="msButtonClicked" HorizontalAlignment="Left" Margin="96,85,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="mPlusButton" Content="M+" Click="mPlusButtonClicked" HorizontalAlignment="Left" Margin="135,85,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="mMinusButton" Content="M-" Click="mMinusButtonClicked" HorizontalAlignment="Left" Margin="174,85,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="backspaceButton" Content="←" Click="backspaceButtonClicked" HorizontalAlignment="Left" Margin="18,117,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="ceButton" Content="CE" Click="ceButtonClicked" HorizontalAlignment="Left" Margin="57,117,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="cButtonButton" Content="C" Click="cButtonClicked" HorizontalAlignment="Left" Margin="96,117,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="plusMinusButton" Content="+-" Click="plusMinusButtonClicked" HorizontalAlignment="Left" Margin="135,117,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="sqrtButton" Content="&#x221A;" Click="sqrtButtonClicked" HorizontalAlignment="Left" Margin="174,117,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="sevenButton" Content="7" Click="sevenButtonClicked" HorizontalAlignment="Left" Margin="18,149,0,0" Padding="15" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="eightButton" Content="8" Click="eightButtonClicked" HorizontalAlignment="Left" Margin="57,149,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="nineButton" Content="9" Click="nineButtonClicked" HorizontalAlignment="Left" Margin="96,149,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="divideButton" Content="/" Click="divideButtonClicked" HorizontalAlignment="Left" Margin="135,149,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="percentButton" Content="%" Click="percentButtonClicked" HorizontalAlignment="Left" Margin="174,149,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="fourButton" Content="4" Click="fourButtonClicked" HorizontalAlignment="Left" Margin="18,181,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="fiveButton" Content="5" Click="fiveButtonClicked" HorizontalAlignment="Left" Margin="57,181,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="sixButton" Content="6" Click="sixButtonClicked" HorizontalAlignment="Left" Margin="96,181,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="multiplicateButton" Content="*" Click="multiplicationButtonClicked" HorizontalAlignment="Left" Margin="135,181,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="oneOnXButton" Content="1/x" Click="oneOnXButtonClicked" HorizontalAlignment="Left" Margin="174,181,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="oneButton" Content="1" Click="oneButtonClicked" HorizontalAlignment="Left" Margin="18,213,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="twoButton" Content="2" Click="twoButtonClicked" HorizontalAlignment="Left" Margin="57,213,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="threeButton" Content="3" Click="threeButtonClicked" HorizontalAlignment="Left" Margin="96,213,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="minusButton" Content="-" Click="minusButtonClicked" HorizontalAlignment="Left" Margin="135,213,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="zeroButton" Content="0" Click="zeroButtonClicked" HorizontalAlignment="Left" Margin="18,245,0,0" VerticalAlignment="Top" Height="27" Width="73" />
+        <Button x:Name="dotButton" Content="." Click="dotButtonClicked" HorizontalAlignment="Left" Margin="96,245,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="plusButton" Content="+" Click="plusButtonClicked" HorizontalAlignment="Left" Margin="135,245,0,0" VerticalAlignment="Top" Height="27" Width="34" />
+        <Button x:Name="equalButton" Content="=" Click="equalButtonClicked" HorizontalAlignment="Left" Margin="174,213,0,0" VerticalAlignment="Top" Height="59" Width="34" />
+    </Grid>
+
+    <Window.Resources>
+        <Style TargetType="TextBox" x:Key="InputFieldStyle">
+            <Setter Property="FontFamily" Value="Consolas" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Background" Value="{DynamicResource InputFieldBack}" />
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="TempFieldStyle">
+            <Setter Property="BorderThickness" Value="1 1 1 0" />
+            <Setter Property="Background" Value="#FFE0EFFE" />
+            <Setter Property="FontFamily" Value="Consolas" />
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="Background" Value="{DynamicResource ButtonBack}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border  CornerRadius="3" BorderThickness="1" BorderBrush="Gray" 
+                                 Background="{TemplateBinding Background}">
+                            <ContentPresenter
+                                VerticalAlignment="Center" 
+                                HorizontalAlignment="Center" 
+                                Content="{TemplateBinding Content}" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Orange"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <LinearGradientBrush x:Key="ButtonBack"
+		StartPoint="0.5,0" EndPoint="0.5,1" 
+		SpreadMethod="Pad" ColorInterpolationMode="SRgbLinearInterpolation" >
+            <GradientStop Color="#FFF0F6FB" Offset="0.4" />
+            <GradientStop Color="#FFD6E2EF" Offset="0.6" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="InputFieldBack"
+		StartPoint="0,0" EndPoint="0,1" 
+		SpreadMethod="Pad" ColorInterpolationMode="SRgbLinearInterpolation" >
+            <GradientStop Color="#FFE0EFFE" Offset="0" />
+            <GradientStop Color="#FFFFFFFF" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="MainBack"
+		StartPoint="0,0" EndPoint="0,1" 
+		SpreadMethod="Pad" ColorInterpolationMode="SRgbLinearInterpolation" >
+            <GradientStop Color="#FFF0F6FB" Offset="0.2" />
+            <GradientStop Color="#FFD6E2EF" Offset="0.4" />
+        </LinearGradientBrush>
+
+    </Window.Resources>
+</Window>

@@ -1,0 +1,16 @@
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\bin\Debug\SimpleWindowsCalculator.exe.config
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\bin\Debug\SimpleWindowsCalculator.exe
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\bin\Debug\SimpleWindowsCalculator.pdb
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\SimpleWindowsCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\MainWindow.baml
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\App.g.cs
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\SimpleWindowsCalculator_MarkupCompile.cache
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\SimpleWindowsCalculator.g.resources
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\SimpleWindowsCalculator.Properties.Resources.resources
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\SimpleWindowsCalculator.csproj.GenerateResource.Cache
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\SimpleWindowsCalculator.exe
+C:\Users\Marin\Desktop\Trash\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\SimpleWindowsCalculator.pdb
+E:\Developer\Individual projects\SimpleWindowsCalculator\SimpleWindowsCalculator\bin\Debug\SimpleWindowsCalculator.exe.config
+E:\Developer\Individual projects\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\SimpleWindowsCalculator.exe
+E:\Developer\Individual projects\SimpleWindowsCalculator\SimpleWindowsCalculator\obj\Debug\SimpleWindowsCalculator.pdb
